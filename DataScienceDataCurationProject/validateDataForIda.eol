@@ -1,0 +1,23 @@
+operation String addDelim(delimeter: String) : String {
+	if(self.isDefined())
+		return (self + delimeter).asString();
+	else
+		return "";
+}
+
+
+operation String startsWithLowerCase() : Boolean {
+	var firstLetter = self.characterAt(0);		
+	return firstLetter == firstLetter.toLowerCase();
+}
+
+operation String startsUpperEveryWord() : Boolean {
+	for(sub in self.split("\\s+")){
+		if(not sub.startsWithUpperCase()) {
+			return false;
+		}
+		
+	}
+	return true;
+}
+

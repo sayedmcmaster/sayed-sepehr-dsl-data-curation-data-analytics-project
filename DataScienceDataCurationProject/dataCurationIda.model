@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DataAnalyticsProjectDataCuration:InitialDataAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DataAnalyticsProjectDataCuration="http://DataAnalyticsProjectDataCuration.ecore" xmi:id="_TSc2wNVXEe2H3quJ8Hxrjg">
+  <nullValues xmi:id="_kkOgkNVXEe2H3quJ8Hxrjg"/>
+  <missingValues xmi:id="_lA3ZQNVXEe2H3quJ8Hxrjg" removeRows="true"/>
+</DataAnalyticsProjectDataCuration:InitialDataAnalysis>

@@ -1,0 +1,120 @@
+@namespace(uri="http://DataAnalyticsProjectDataCuration.ecore", prefix="DataAnalyticsProjectDataCuration")
+package dataAnalyticsProjectDataCuration;
+
+//root element
+@gmf.diagram
+class DataAnalyticsProjectDataCuration {
+	attr EString Label;
+	val Data data;
+	val InitialDataAnalysis ida;
+	val ExploratoryDataAnalysis eda;
+}
+
+
+// *********************************
+// section DataAnalyticsProjectDataCuration
+
+class Data {
+	attr EString Label;
+	val Attribute attributes;
+	val DataValue dataValues;
+}
+
+class InitialDataAnalysis {
+	attr EString Label;
+	val NullValues nullValues;
+	val MissingValues missingValues;
+}
+
+class ExploratoryDataAnalysis {
+	attr EString Label;
+	val RSquare rSquare;
+	val PValueFSignificance pValueFSignificance;
+	val UnitaryAnalysis unitaryAnalysis;
+	val BiVariateAnalysis biVariateAnalysis;
+	val UnivariateVisualization univariateVisualization;
+	val BiVariateVisualization biVariateVisualization;
+	val NormalizationStandardization normalizationStandardization;
+	
+}
+
+// ********************************
+
+// section Data
+
+class Attribute {
+	attr EString Label;
+	attr EString name;
+	attr EString DataType;
+}
+
+class DataValue {
+	attr EString Label;
+	attr EInt[*] row;
+}
+
+// ******************************
+// Section InitialDataAnalysis
+
+class NullValues {
+	attr EString Label;
+	attr EBoolean removeRow;
+	attr EString replacementMethod;
+}
+
+class MissingValues {
+	attr EString Label;
+	attr EBoolean removeRows;
+	attr EString replacementMethod;
+}
+
+// ************************************************
+// Section ExploratoryDataAnalysis
+
+class RSquare {
+	
+	attr EString Label;
+	attr double value;
+	attr double adjustedRSquare;
+	attr double cutOffForRSquare;
+	attr EString isDataFitForRegression;
+}
+
+class PValueFSignificance {
+	attr EString Label;
+	derived attr EString[*] attributeList;
+	readonly attr double[*] attributePValues;
+}
+
+class UnitaryAnalysis {
+	attr EString Label;
+	attr EString[*] allowedMethods;
+	attr EString[*] selectedMethods;
+}
+
+class BiVariateAnalysis {
+	attr EString Label;
+	attr EString[*] allowedMethods;
+	attr EString[*] selectedMethods;
+}
+
+class UnivariateVisualization {
+	attr EString Label;
+	attr EBoolean method;
+	attr EBoolean showLegend;
+	attr EBoolean showTitle;
+}
+
+class BiVariateVisualization {
+	attr EString Label;
+	attr EString method;
+	attr EBoolean showLegend;
+	attr EBoolean showTitle;
+}
+
+class NormalizationStandardization {
+	attr EString Label;
+	attr EBoolean normalizeFrom0To1;
+	attr EBoolean standardizeFromMinus1To1;
+}
+

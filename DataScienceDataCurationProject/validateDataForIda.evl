@@ -1,0 +1,37 @@
+import "validateDataForIda.eol";
+
+context Attribute {
+	critique nameStartCapital {
+		guard: self.name.isDefined()
+		check: self.name.startsWithLowerCase() 
+		//message: "The name does not start with lowercase" 
+		fix {
+			title: "Rename to " + self.name.firstToLowerCase()
+			
+			do {
+					self.name = self.name.firstToLowerCase();
+				}
+			}
+	}
+}
+
+context DataValue {
+	critique allNameStartCapital {
+		guard: self.name.isDefined()
+		check: self.name.startsUpperEveryWord()
+		message: "Every word in the name should start with a capital letter."	
+	}
+}
+
+context Data {
+	constraint nameNotEmpty{
+		check: self.name.isDefined()
+		
+		fix {
+			title: "Entering a sample name"
+			do {
+				self.name = "Sample";
+			}		
+		}		
+	}
+}

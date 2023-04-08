@@ -1,0 +1,6 @@
+operation String fillNan(replace: String) : String {
+	if(self.isDefined())
+		return (self + delimeter).asString();
+	else
+		return "";
+}

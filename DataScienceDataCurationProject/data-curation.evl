@@ -1,0 +1,18 @@
+import "data-curation.eol";
+
+context InitialDataAnalysis {
+	critique cellNanValues {
+		guard: self.name.isDefined()
+		check: self.name.startsWithUpperCase() 
+		//message: "The name does not start with uppercase" 
+		fix {
+		
+			title: "Rename to " + self.name.firstToUpperCase()
+			
+			do {
+					self.value = 0;
+				}
+			}
+	}
+}
+
