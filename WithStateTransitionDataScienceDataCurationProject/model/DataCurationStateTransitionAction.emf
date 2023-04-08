@@ -1,0 +1,330 @@
+@namespace( uri = "http://DataCurationStateTransitionAction.ecore", prefix = "DataCurationStateTransitionAction" )
+package dataCurationStateTransitionAction;
+
+//root element
+class DataCurationStateTransitionAction {
+	attr EString Label;
+	attr EString Name;
+	
+	val Data data;
+	val InitialDataAnalysis ida;
+	val ExploratoryDataAnalysis eda;
+	
+	val State[*] states;
+	val Transition[*] transitions;
+	
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+
+// *********************************
+// section DataAnalyticsProjectDataCuration
+
+class Data {
+	attr EString Label;
+	val Attribute attributes;
+	val DataValue dataValues;
+	
+	//val State[*]#owningData ownedState;
+	//ref State[1] initialState;
+	//ref State[+] finalState;
+	
+	
+	ref State states;
+	ref Transition transitions;
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	val Action actionToTake;
+	val Event eventToTake;
+			
+}
+
+class InitialDataAnalysis {
+	attr EString Label;
+	val NullValues nullValues;
+	val MissingValues missingValues;
+	
+	ref State states;
+	ref Transition transitions;
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+class ExploratoryDataAnalysis {
+	attr EString Label;
+	val RSquare rSquare;
+	val PValueFSignificance pValueFSignificance;
+	val UnitaryAnalysis unitaryAnalysis;
+	val BiVariateAnalysis biVariateAnalysis;
+	val UnivariateVisualization univariateVisualization;
+	val BiVariateVisualization biVariateVisualization;
+	val NormalizationStandardization normalizationStandardization;
+	
+	
+	//val State[*]#owningData ownedState;
+	ref State[1] initialState;
+	ref State[+] finalState;	
+	
+	
+	ref State states;
+	ref Transition transitions;
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+	
+	
+}
+
+// ********************************
+
+// section Data
+
+class Attribute {
+	attr EString Label;
+	attr EString name;
+	attr EString DataType;
+}
+
+class DataValue {
+	attr EString Label;
+	attr EInt[*] row;
+}
+
+// ******************************
+// Section InitialDataAnalysis
+
+class NullValues {
+	attr EString Label;
+	attr EBoolean removeRow;
+	attr EString replacementMethod;
+	
+	ref State states;
+	ref Transition transitions;
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+	
+}
+
+class MissingValues {
+	attr EString Label;
+	attr EBoolean removeRows;
+	attr EString replacementMethod;
+	
+	ref State states;
+	ref Transition transitions;
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+// ************************************************
+// Section ExploratoryDataAnalysis
+
+class RSquare {
+	attr EString Label;
+	attr EDouble value;
+	attr EDouble adjustedRSquare;
+	attr EDouble cutOffForRSquare;
+	attr EString isDataFitForRegression;
+	
+	ref State states;
+	ref Transition transitions;
+	
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+class PValueFSignificance {
+	attr EString Label;
+	derived attr EString[*] attributeList;
+	readonly attr EDouble[*] attributePValues;
+	
+	ref State states;
+	ref Transition transitions;
+	
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+class UnitaryAnalysis {
+	attr EString Label;
+	attr EString[*] allowedMethods;
+	attr EString[*] selectedMethods;
+	
+	ref State states;
+	ref Transition transitions;
+	
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+class BiVariateAnalysis {
+	attr EString Label;
+	attr EString[*] allowedMethods;
+	attr EString[*] selectedMethods;
+	
+	ref State states;
+	ref Transition transitions;
+	
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+class UnivariateVisualization {
+	attr EString Label;
+	attr EBoolean method;
+	attr EBoolean showLegend;
+	attr EBoolean showTitle;
+	
+	ref State states;
+	ref Transition transitions;
+	
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+class BiVariateVisualization {
+	attr EString Label;
+	attr EString method;
+	attr EBoolean showLegend;
+	attr EBoolean showTitle;
+	
+	ref State states;
+	ref Transition transitions;
+	
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+class NormalizationStandardization {
+	attr EString Label;
+	attr EBoolean normalizeFrom0To1;
+	attr EBoolean standardizeFromMinus1To1;
+	
+	ref State states;
+	ref Transition transitions;
+	
+	
+	ref State[*]#outgoingTransition source;
+	ref State[*]#incomingTransition target;
+	
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+
+class State {
+	attr EString Label;
+	attr EString name;
+	
+	attr EBoolean isInitial ;
+	attr EBoolean isFinal ;
+	
+	//ref ExploratoryDataAnalysis[1] #ownedState owningData;
+	
+	ref Transition[*]#source outgoingTransitions;
+	ref Transition[*]#target incomingTransitions;
+	
+	ref State states;
+	ref Transition transitions;
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+class Transition {
+	attr EString Label;
+	attr EString Name;
+		
+	//ref State source;
+	//ref State target;
+	
+	
+	
+	attr EString input;
+	attr EString output;
+	
+	attr EString event;
+	
+	
+	ref State states;
+	ref Transition transitions;
+	
+	
+	val Action actionToTake;
+	val Event eventToTake;
+	
+}
+
+// We may use one of Action or Event
+class Action{
+	attr EString Label;
+	attr EString Name;
+	ref State source;
+	ref State target;
+}
+
+class Event{
+	attr EString Label;
+	attr EString Name;
+	ref State source;
+	ref State target;
+
+}
