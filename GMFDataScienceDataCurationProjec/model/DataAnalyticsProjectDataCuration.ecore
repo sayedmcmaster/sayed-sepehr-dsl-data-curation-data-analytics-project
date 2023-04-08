@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="dataAnalyticsProjectDataCuration" nsURI="http://DataAnalyticsProjectDataCuration.ecore"
+    nsPrefix="DataAnalyticsProjectDataCuration">
+  <eClassifiers xsi:type="ecore:EClass" name="DataAnalyticsProjectDataCuration">
+    <eAnnotations source="gmf.diagram"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data" eType="#//Data" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ida" eType="#//InitialDataAnalysis"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eda" eType="#//ExploratoryDataAnalysis"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Data">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" eType="#//Attribute"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataValues" eType="#//DataValue"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InitialDataAnalysis">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nullValues" eType="#//NullValues"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="missingValues" eType="#//MissingValues"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExploratoryDataAnalysis">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rSquare" eType="#//RSquare"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pValueFSignificance" eType="#//PValueFSignificance"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="unitaryAnalysis" eType="#//UnitaryAnalysis"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="biVariateAnalysis" eType="#//BiVariateAnalysis"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="univariateVisualization"
+        eType="#//UnivariateVisualization" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="biVariateVisualization"
+        eType="#//BiVariateVisualization" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="normalizationStandardization"
+        eType="#//NormalizationStandardization" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DataType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="row" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NullValues">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="removeRow" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="replacementMethod" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MissingValues">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="removeRows" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="replacementMethod" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RSquare">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adjustedRSquare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cutOffForRSquare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDataFitForRegression"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PValueFSignificance">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeList" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributePValues" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" changeable="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UnitaryAnalysis">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowedMethods" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="selectedMethods" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BiVariateAnalysis">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowedMethods" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="selectedMethods" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UnivariateVisualization">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="showLegend" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="showTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BiVariateVisualization">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="showLegend" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="showTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NormalizationStandardization">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="normalizeFrom0To1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="standardizeFromMinus1To1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+</ecore:EPackage>

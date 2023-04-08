@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/DataScienceDataCurationProject/src" modelPluginID="DataScienceDataCurationProject"
+    modelName="DataAnalyticsProjectDataCuration" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>DataAnalyticsProjectDataCuration.ecore</foreignModel>
+  <genPackages prefix="DataAnalyticsProjectDataCuration" disposableProviderFactory="true"
+      ecorePackage="DataAnalyticsProjectDataCuration.ecore#/">
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//DataAnalyticsProjectDataCuration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//DataAnalyticsProjectDataCuration/Label"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//DataAnalyticsProjectDataCuration/data"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//DataAnalyticsProjectDataCuration/ida"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//DataAnalyticsProjectDataCuration/eda"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//Data">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//Data/Label"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//Data/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//Data/dataValues"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//InitialDataAnalysis">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//InitialDataAnalysis/Label"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//InitialDataAnalysis/nullValues"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//InitialDataAnalysis/missingValues"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//ExploratoryDataAnalysis">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//ExploratoryDataAnalysis/Label"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//ExploratoryDataAnalysis/rSquare"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//ExploratoryDataAnalysis/pValueFSignificance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//ExploratoryDataAnalysis/unitaryAnalysis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//ExploratoryDataAnalysis/biVariateAnalysis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//ExploratoryDataAnalysis/univariateVisualization"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//ExploratoryDataAnalysis/biVariateVisualization"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataAnalyticsProjectDataCuration.ecore#//ExploratoryDataAnalysis/normalizationStandardization"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//Attribute/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//Attribute/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//Attribute/DataType"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//DataValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//DataValue/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//DataValue/row"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//NullValues">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//NullValues/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//NullValues/removeRow"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//NullValues/replacementMethod"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//MissingValues">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//MissingValues/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//MissingValues/removeRows"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//MissingValues/replacementMethod"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//RSquare">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//RSquare/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//RSquare/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//RSquare/adjustedRSquare"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//RSquare/cutOffForRSquare"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//RSquare/isDataFitForRegression"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//PValueFSignificance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//PValueFSignificance/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//PValueFSignificance/attributeList"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//PValueFSignificance/attributePValues"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//UnitaryAnalysis">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//UnitaryAnalysis/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//UnitaryAnalysis/allowedMethods"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//UnitaryAnalysis/selectedMethods"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//BiVariateAnalysis">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//BiVariateAnalysis/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//BiVariateAnalysis/allowedMethods"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//BiVariateAnalysis/selectedMethods"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//UnivariateVisualization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//UnivariateVisualization/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//UnivariateVisualization/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//UnivariateVisualization/showLegend"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//UnivariateVisualization/showTitle"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//BiVariateVisualization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//BiVariateVisualization/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//BiVariateVisualization/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//BiVariateVisualization/showLegend"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//BiVariateVisualization/showTitle"/>
+    </genClasses>
+    <genClasses ecoreClass="DataAnalyticsProjectDataCuration.ecore#//NormalizationStandardization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//NormalizationStandardization/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//NormalizationStandardization/normalizeFrom0To1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataAnalyticsProjectDataCuration.ecore#//NormalizationStandardization/standardizeFromMinus1To1"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

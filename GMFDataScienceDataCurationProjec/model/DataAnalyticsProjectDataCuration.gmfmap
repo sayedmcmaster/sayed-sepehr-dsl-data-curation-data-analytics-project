@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfmap:Mapping
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:gmfmap="http://www.eclipse.org/gmf/2008/mappings">
+  <diagram>
+    <diagramCanvas
+        href="DataAnalyticsProjectDataCuration.gmfgraph#/"/>
+    <domainModel
+        href="DataAnalyticsProjectDataCuration.ecore#/"/>
+    <domainMetaElement
+        href="DataAnalyticsProjectDataCuration.ecore#//DataAnalyticsProjectDataCuration"/>
+  </diagram>
+</gmfmap:Mapping>

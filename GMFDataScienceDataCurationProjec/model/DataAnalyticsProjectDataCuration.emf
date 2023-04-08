@@ -1,0 +1,120 @@
+@namespace(uri="http://DataAnalyticsProjectDataCuration.ecore", prefix="DataAnalyticsProjectDataCuration")
+package dataAnalyticsProjectDataCuration;
+
+//root element
+@gmf.diagram
+class DataAnalyticsProjectDataCuration {
+	attr String Label;
+	val Data data;
+	val InitialDataAnalysis ida;
+	val ExploratoryDataAnalysis eda;
+}
+
+
+// *********************************
+// section DataAnalyticsProjectDataCuration
+
+class Data {
+	attr String Label;
+	val Attribute attributes;
+	val DataValue dataValues;
+}
+
+class InitialDataAnalysis {
+	attr String Label;
+	val NullValues nullValues;
+	val MissingValues missingValues;
+}
+
+class ExploratoryDataAnalysis {
+	attr String Label;
+	val RSquare rSquare;
+	val PValueFSignificance pValueFSignificance;
+	val UnitaryAnalysis unitaryAnalysis;
+	val BiVariateAnalysis biVariateAnalysis;
+	val UnivariateVisualization univariateVisualization;
+	val BiVariateVisualization biVariateVisualization;
+	val NormalizationStandardization normalizationStandardization;
+	
+}
+
+// ********************************
+
+// section Data
+
+class Attribute {
+	attr String Label;
+	attr String name;
+	attr String DataType;
+}
+
+class DataValue {
+	attr String Label;
+	attr int[*] row;
+}
+
+// ******************************
+// Section InitialDataAnalysis
+
+class NullValues {
+	attr String Label;
+	attr boolean removeRow;
+	attr String replacementMethod;
+}
+
+class MissingValues {
+	attr String Label;
+	attr boolean removeRows;
+	attr String replacementMethod;
+}
+
+// ************************************************
+// Section ExploratoryDataAnalysis
+
+class RSquare {
+	
+	attr String Label;
+	attr double value;
+	attr double adjustedRSquare;
+	attr double cutOffForRSquare;
+	attr String isDataFitForRegression;
+}
+
+class PValueFSignificance {
+	attr String Label;
+	derived attr String[*] attributeList;
+	readonly attr double[*] attributePValues;
+}
+
+class UnitaryAnalysis {
+	attr String Label;
+	attr String[*] allowedMethods;
+	attr String[*] selectedMethods;
+}
+
+class BiVariateAnalysis {
+	attr String Label;
+	attr String[*] allowedMethods;
+	attr String[*] selectedMethods;
+}
+
+class UnivariateVisualization {
+	attr String Label;
+	attr boolean method;
+	attr boolean showLegend;
+	attr boolean showTitle;
+}
+
+class BiVariateVisualization {
+	attr String Label;
+	attr String method;
+	attr boolean showLegend;
+	attr boolean showTitle;
+}
+
+class NormalizationStandardization {
+	attr String Label;
+	attr boolean normalizeFrom0To1;
+	attr boolean standardizeFromMinus1To1;
+}
+
