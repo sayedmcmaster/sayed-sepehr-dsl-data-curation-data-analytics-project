@@ -1,0 +1,29 @@
+// test hello
+operation hello() {
+  "Hello world!".println();
+}
+
+operation String replaceNullWithZero() : String {
+	return "successfull replaceNullWithZero";
+}
+
+
+operation Boolean removeNullValueRows() : Boolean {
+	return true;
+}
+
+operation String startsUpperEveryWord() : Boolean {
+	for(sub in self.split("\\s+")){
+		if(not sub.startsWithUpperCase()) {
+			return false;
+		}
+		
+	}
+	return true;
+}
+
+
+
+
+
+

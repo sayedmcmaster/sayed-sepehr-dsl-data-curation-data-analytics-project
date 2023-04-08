@@ -1,0 +1,4 @@
+rule Table2HTML transform t : InitialDataAnalysis {
+	template : "IdaDataCleaningOutputSummary.egl"
+	target : "IdaDataCleaningOutputSummary.html"
+}

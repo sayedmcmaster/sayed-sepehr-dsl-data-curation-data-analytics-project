@@ -1,0 +1,9 @@
+<table>
+[%for (row in t.data) { %]
+	<tr>
+	[%for (cell in row.cells) { %]
+		<td>[%= cell.content %]</td>
+	[%}%]
+	</tr>
+[%}%]
+</table>

@@ -1,0 +1,7 @@
+rule DataAnalysisDeliverablesSummary transform ida : InitialDataAnalysis to t : StructuredContent!Table {
+	t.id = "Data_Analysis_deliverables";
+	t.createRow(Sequence{"Deliverable", "Cleaning Aspect", "Due"});
+	for (d in ida.wps.deliverables.flatten().sortBy(d|d.due)) {
+		t.createRow(Sequence{d.getId(), d.wp.number, d.due});
+	}
+}

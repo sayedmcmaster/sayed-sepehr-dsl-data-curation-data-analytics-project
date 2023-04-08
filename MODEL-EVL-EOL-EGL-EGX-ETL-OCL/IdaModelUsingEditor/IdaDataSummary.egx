@@ -1,0 +1,13 @@
+pre { "Transformation starting 1".println(); }
+
+rule DATA2HTML transform summary: InitialDataAnalysis {
+	
+	template: "IdaDataSummay.egl"
+	
+	// pass additional parameters to the template
+	//parameters : Map{ "attributes" = summary.Data.Attributes }
+	target: "IdaDataSummay.egl.html"
+
+}
+
+post { "Transformation finished 2".println(); }

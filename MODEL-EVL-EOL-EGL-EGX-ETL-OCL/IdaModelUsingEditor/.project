@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>IdaModelUsingEditor</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<variableList>
+		<variable>
+			<name>metamodelimpl</name>
+			<value>file:/C:/my_works_2021_07_25/hd-thing/mcmaster/meng/CAS%20703%20-%20Software%20Design/project-and-project-report/project-implementation-workspace/DataScienceDataCurationProject/bin/dataAnalyticsProjectDataCuration/impl</value>
+		</variable>
+		<variable>
+			<name>nullvalues</name>
+			<value>file:/C:/my_works_2021_07_25/hd-thing/mcmaster/meng/CAS%20703%20-%20Software%20Design/project-and-project-report/project-implementation-workspace/DataScienceDataCurationProject/bin/dataAnalyticsProjectDataCuration/impl/NullValuesImpl.class</value>
+		</variable>
+	</variableList>
+</projectDescription>

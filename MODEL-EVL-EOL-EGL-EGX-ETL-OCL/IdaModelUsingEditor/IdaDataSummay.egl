@@ -1,0 +1,22 @@
+[%import "testIdaOperation.eol";%]
+
+
+[%=out.startPreserve("<!--", "-->", "description", true)%]
+<table border = "1">
+	<tr>
+		<td>Deliverable</td>
+		<td>WP</td>
+		<td>Due</td>
+		</tr>
+		[%for (col in summary.Data.Attributes ){%]
+			<tr>
+				<td>[%= col.name %]</td>								
+				<td>[%= type(Data.values) %] </td>
+				<td>[%= hasNullOrNotInColumn()  %]</td>
+				<td>[%= isValueMissingInColumn() %]</td>
+			</tr>
+		[%}%]
+</table>
+[% statement* %]: 
+[%= expression%]: 
+[%=out.stopPreserve()%]	
