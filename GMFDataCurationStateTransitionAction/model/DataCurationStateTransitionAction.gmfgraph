@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="dataCurationStateTransitionAction">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="DataStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="DataTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="DataSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="DataTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="InitialDataAnalysisStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="InitialDataAnalysisTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="InitialDataAnalysisSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="InitialDataAnalysisTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ExploratoryDataAnalysisInitialStateTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ExploratoryDataAnalysisFinalStateTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ExploratoryDataAnalysisStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ExploratoryDataAnalysisTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ExploratoryDataAnalysisSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ExploratoryDataAnalysisTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NullValuesStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NullValuesTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NullValuesSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NullValuesTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MissingValuesStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MissingValuesTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MissingValuesSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MissingValuesTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RSquareStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RSquareTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RSquareSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RSquareTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PValueFSignificanceStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PValueFSignificanceTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PValueFSignificanceSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PValueFSignificanceTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="UnitaryAnalysisStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="UnitaryAnalysisTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="UnitaryAnalysisSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="UnitaryAnalysisTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BiVariateAnalysisStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BiVariateAnalysisTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BiVariateAnalysisSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BiVariateAnalysisTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="UnivariateVisualizationStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="UnivariateVisualizationTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="UnivariateVisualizationSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="UnivariateVisualizationTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BiVariateVisualizationStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BiVariateVisualizationTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BiVariateVisualizationSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BiVariateVisualizationTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NormalizationStandardizationStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NormalizationStandardizationTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NormalizationStandardizationSourceTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NormalizationStandardizationTargetTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="StateOutgoingTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="StateIncomingTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="StateStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="StateTransitionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="TransitionStatesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="TransitionTransitionsTargetDecoration"/>
+    <descriptors name="DataFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="DataFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="DataLabelFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="DataStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="DataStatesFigure" targetDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+    <descriptors name="DataTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="DataTransitionsFigure" targetDecoration="//@figures.0/@figures.1"/>
+    </descriptors>
+    <descriptors name="DataSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="DataSourceFigure" targetDecoration="//@figures.0/@figures.2"/>
+    </descriptors>
+    <descriptors name="DataTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="DataTargetFigure" targetDecoration="//@figures.0/@figures.3"/>
+    </descriptors>
+    <descriptors name="InitialDataAnalysisFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="InitialDataAnalysisFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="InitialDataAnalysisLabelFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="InitialDataAnalysisStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="InitialDataAnalysisStatesFigure" targetDecoration="//@figures.0/@figures.4"/>
+    </descriptors>
+    <descriptors name="InitialDataAnalysisTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="InitialDataAnalysisTransitionsFigure" targetDecoration="//@figures.0/@figures.5"/>
+    </descriptors>
+    <descriptors name="InitialDataAnalysisSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="InitialDataAnalysisSourceFigure" targetDecoration="//@figures.0/@figures.6"/>
+    </descriptors>
+    <descriptors name="InitialDataAnalysisTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="InitialDataAnalysisTargetFigure" targetDecoration="//@figures.0/@figures.7"/>
+    </descriptors>
+    <descriptors name="ExploratoryDataAnalysisFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ExploratoryDataAnalysisFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="ExploratoryDataAnalysisLabelFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ExploratoryDataAnalysisInitialStateFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ExploratoryDataAnalysisInitialStateFigure" targetDecoration="//@figures.0/@figures.8"/>
+    </descriptors>
+    <descriptors name="ExploratoryDataAnalysisFinalStateFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ExploratoryDataAnalysisFinalStateFigure" targetDecoration="//@figures.0/@figures.9"/>
+    </descriptors>
+    <descriptors name="ExploratoryDataAnalysisStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ExploratoryDataAnalysisStatesFigure" targetDecoration="//@figures.0/@figures.10"/>
+    </descriptors>
+    <descriptors name="ExploratoryDataAnalysisTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ExploratoryDataAnalysisTransitionsFigure" targetDecoration="//@figures.0/@figures.11"/>
+    </descriptors>
+    <descriptors name="ExploratoryDataAnalysisSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ExploratoryDataAnalysisSourceFigure" targetDecoration="//@figures.0/@figures.12"/>
+    </descriptors>
+    <descriptors name="ExploratoryDataAnalysisTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ExploratoryDataAnalysisTargetFigure" targetDecoration="//@figures.0/@figures.13"/>
+    </descriptors>
+    <descriptors name="AttributeFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="AttributeFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="AttributeLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="AttributeNameFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="AttributeDataTypeFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.17/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.17/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.17/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="DataValueFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="DataValueFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="DataValueLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="DataValueRowFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.18/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.18/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="NullValuesFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="NullValuesFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="NullValuesLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="NullValuesRemoveRowFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="NullValuesReplacementMethodFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.19/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.19/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.19/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="NullValuesStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NullValuesStatesFigure" targetDecoration="//@figures.0/@figures.14"/>
+    </descriptors>
+    <descriptors name="NullValuesTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NullValuesTransitionsFigure" targetDecoration="//@figures.0/@figures.15"/>
+    </descriptors>
+    <descriptors name="NullValuesSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NullValuesSourceFigure" targetDecoration="//@figures.0/@figures.16"/>
+    </descriptors>
+    <descriptors name="NullValuesTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NullValuesTargetFigure" targetDecoration="//@figures.0/@figures.17"/>
+    </descriptors>
+    <descriptors name="MissingValuesFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="MissingValuesFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="MissingValuesLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="MissingValuesRemoveRowsFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="MissingValuesReplacementMethodFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.24/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.24/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.24/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="MissingValuesStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MissingValuesStatesFigure" targetDecoration="//@figures.0/@figures.18"/>
+    </descriptors>
+    <descriptors name="MissingValuesTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MissingValuesTransitionsFigure" targetDecoration="//@figures.0/@figures.19"/>
+    </descriptors>
+    <descriptors name="MissingValuesSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MissingValuesSourceFigure" targetDecoration="//@figures.0/@figures.20"/>
+    </descriptors>
+    <descriptors name="MissingValuesTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MissingValuesTargetFigure" targetDecoration="//@figures.0/@figures.21"/>
+    </descriptors>
+    <descriptors name="RSquareFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RSquareFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="RSquareLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="RSquareValueFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="RSquareAdjustedRSquareFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="RSquareCutOffForRSquareFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="RSquareIsDataFitForRegressionFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.29/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.29/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.29/@actualFigure/@children.2"/>
+      <accessors figure="//@figures.0/@descriptors.29/@actualFigure/@children.3"/>
+      <accessors figure="//@figures.0/@descriptors.29/@actualFigure/@children.4"/>
+    </descriptors>
+    <descriptors name="RSquareStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RSquareStatesFigure" targetDecoration="//@figures.0/@figures.22"/>
+    </descriptors>
+    <descriptors name="RSquareTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RSquareTransitionsFigure" targetDecoration="//@figures.0/@figures.23"/>
+    </descriptors>
+    <descriptors name="RSquareSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RSquareSourceFigure" targetDecoration="//@figures.0/@figures.24"/>
+    </descriptors>
+    <descriptors name="RSquareTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RSquareTargetFigure" targetDecoration="//@figures.0/@figures.25"/>
+    </descriptors>
+    <descriptors name="PValueFSignificanceFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="PValueFSignificanceFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="PValueFSignificanceLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="PValueFSignificanceAttributeListFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="PValueFSignificanceAttributePValuesFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.34/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.34/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.34/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="PValueFSignificanceStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PValueFSignificanceStatesFigure" targetDecoration="//@figures.0/@figures.26"/>
+    </descriptors>
+    <descriptors name="PValueFSignificanceTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PValueFSignificanceTransitionsFigure" targetDecoration="//@figures.0/@figures.27"/>
+    </descriptors>
+    <descriptors name="PValueFSignificanceSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PValueFSignificanceSourceFigure" targetDecoration="//@figures.0/@figures.28"/>
+    </descriptors>
+    <descriptors name="PValueFSignificanceTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PValueFSignificanceTargetFigure" targetDecoration="//@figures.0/@figures.29"/>
+    </descriptors>
+    <descriptors name="UnitaryAnalysisFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="UnitaryAnalysisFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="UnitaryAnalysisLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="UnitaryAnalysisAllowedMethodsFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="UnitaryAnalysisSelectedMethodsFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.39/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.39/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.39/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="UnitaryAnalysisStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="UnitaryAnalysisStatesFigure" targetDecoration="//@figures.0/@figures.30"/>
+    </descriptors>
+    <descriptors name="UnitaryAnalysisTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="UnitaryAnalysisTransitionsFigure" targetDecoration="//@figures.0/@figures.31"/>
+    </descriptors>
+    <descriptors name="UnitaryAnalysisSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="UnitaryAnalysisSourceFigure" targetDecoration="//@figures.0/@figures.32"/>
+    </descriptors>
+    <descriptors name="UnitaryAnalysisTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="UnitaryAnalysisTargetFigure" targetDecoration="//@figures.0/@figures.33"/>
+    </descriptors>
+    <descriptors name="BiVariateAnalysisFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="BiVariateAnalysisFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="BiVariateAnalysisLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="BiVariateAnalysisAllowedMethodsFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="BiVariateAnalysisSelectedMethodsFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.44/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.44/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.44/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="BiVariateAnalysisStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BiVariateAnalysisStatesFigure" targetDecoration="//@figures.0/@figures.34"/>
+    </descriptors>
+    <descriptors name="BiVariateAnalysisTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BiVariateAnalysisTransitionsFigure" targetDecoration="//@figures.0/@figures.35"/>
+    </descriptors>
+    <descriptors name="BiVariateAnalysisSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BiVariateAnalysisSourceFigure" targetDecoration="//@figures.0/@figures.36"/>
+    </descriptors>
+    <descriptors name="BiVariateAnalysisTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BiVariateAnalysisTargetFigure" targetDecoration="//@figures.0/@figures.37"/>
+    </descriptors>
+    <descriptors name="UnivariateVisualizationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="UnivariateVisualizationFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="UnivariateVisualizationLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="UnivariateVisualizationMethodFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="UnivariateVisualizationShowLegendFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="UnivariateVisualizationShowTitleFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.49/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.49/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.49/@actualFigure/@children.2"/>
+      <accessors figure="//@figures.0/@descriptors.49/@actualFigure/@children.3"/>
+    </descriptors>
+    <descriptors name="UnivariateVisualizationStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="UnivariateVisualizationStatesFigure" targetDecoration="//@figures.0/@figures.38"/>
+    </descriptors>
+    <descriptors name="UnivariateVisualizationTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="UnivariateVisualizationTransitionsFigure" targetDecoration="//@figures.0/@figures.39"/>
+    </descriptors>
+    <descriptors name="UnivariateVisualizationSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="UnivariateVisualizationSourceFigure" targetDecoration="//@figures.0/@figures.40"/>
+    </descriptors>
+    <descriptors name="UnivariateVisualizationTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="UnivariateVisualizationTargetFigure" targetDecoration="//@figures.0/@figures.41"/>
+    </descriptors>
+    <descriptors name="BiVariateVisualizationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="BiVariateVisualizationFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="BiVariateVisualizationLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="BiVariateVisualizationMethodFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="BiVariateVisualizationShowLegendFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="BiVariateVisualizationShowTitleFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.54/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.54/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.54/@actualFigure/@children.2"/>
+      <accessors figure="//@figures.0/@descriptors.54/@actualFigure/@children.3"/>
+    </descriptors>
+    <descriptors name="BiVariateVisualizationStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BiVariateVisualizationStatesFigure" targetDecoration="//@figures.0/@figures.42"/>
+    </descriptors>
+    <descriptors name="BiVariateVisualizationTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BiVariateVisualizationTransitionsFigure" targetDecoration="//@figures.0/@figures.43"/>
+    </descriptors>
+    <descriptors name="BiVariateVisualizationSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BiVariateVisualizationSourceFigure" targetDecoration="//@figures.0/@figures.44"/>
+    </descriptors>
+    <descriptors name="BiVariateVisualizationTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BiVariateVisualizationTargetFigure" targetDecoration="//@figures.0/@figures.45"/>
+    </descriptors>
+    <descriptors name="NormalizationStandardizationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="NormalizationStandardizationFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="NormalizationStandardizationLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="NormalizationStandardizationNormalizeFrom0To1Figure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="NormalizationStandardizationStandardizeFromMinus1To1Figure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.59/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.59/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.59/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="NormalizationStandardizationStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NormalizationStandardizationStatesFigure" targetDecoration="//@figures.0/@figures.46"/>
+    </descriptors>
+    <descriptors name="NormalizationStandardizationTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NormalizationStandardizationTransitionsFigure" targetDecoration="//@figures.0/@figures.47"/>
+    </descriptors>
+    <descriptors name="NormalizationStandardizationSourceFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NormalizationStandardizationSourceFigure" targetDecoration="//@figures.0/@figures.48"/>
+    </descriptors>
+    <descriptors name="NormalizationStandardizationTargetFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NormalizationStandardizationTargetFigure" targetDecoration="//@figures.0/@figures.49"/>
+    </descriptors>
+    <descriptors name="StateFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="StateFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="StateLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="StateNameFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="StateIsInitialFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="StateIsFinalFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.64/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.64/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.64/@actualFigure/@children.2"/>
+      <accessors figure="//@figures.0/@descriptors.64/@actualFigure/@children.3"/>
+    </descriptors>
+    <descriptors name="StateOutgoingTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="StateOutgoingTransitionsFigure" targetDecoration="//@figures.0/@figures.50"/>
+    </descriptors>
+    <descriptors name="StateIncomingTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="StateIncomingTransitionsFigure" targetDecoration="//@figures.0/@figures.51"/>
+    </descriptors>
+    <descriptors name="StateStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="StateStatesFigure" targetDecoration="//@figures.0/@figures.52"/>
+    </descriptors>
+    <descriptors name="StateTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="StateTransitionsFigure" targetDecoration="//@figures.0/@figures.53"/>
+    </descriptors>
+    <descriptors name="TransitionFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="TransitionFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="TransitionLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="TransitionNameFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="TransitionInputFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="TransitionOutputFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="TransitionEventFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.69/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.69/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.69/@actualFigure/@children.2"/>
+      <accessors figure="//@figures.0/@descriptors.69/@actualFigure/@children.3"/>
+      <accessors figure="//@figures.0/@descriptors.69/@actualFigure/@children.4"/>
+    </descriptors>
+    <descriptors name="TransitionStatesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="TransitionStatesFigure" targetDecoration="//@figures.0/@figures.54"/>
+    </descriptors>
+    <descriptors name="TransitionTransitionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="TransitionTransitionsFigure" targetDecoration="//@figures.0/@figures.55"/>
+    </descriptors>
+    <descriptors name="ActionFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ActionFigure">
+        <children xsi:type="gmfgraph:Label" name="ActionLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="ActionNameFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.72/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.72/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="EventFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="EventFigure">
+        <children xsi:type="gmfgraph:Label" name="EventLabelFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="EventNameFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.73/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.73/@actualFigure/@children.1"/>
+    </descriptors>
+  </figures>
+  <nodes name="Data" figure="DataFigure"/>
+  <nodes name="InitialDataAnalysis" figure="InitialDataAnalysisFigure"/>
+  <nodes name="ExploratoryDataAnalysis" figure="ExploratoryDataAnalysisFigure"/>
+  <nodes name="Attribute" figure="AttributeFigure"/>
+  <nodes name="DataValue" figure="DataValueFigure"/>
+  <nodes name="NullValues" figure="NullValuesFigure"/>
+  <nodes name="MissingValues" figure="MissingValuesFigure"/>
+  <nodes name="RSquare" figure="RSquareFigure"/>
+  <nodes name="PValueFSignificance" figure="PValueFSignificanceFigure"/>
+  <nodes name="UnitaryAnalysis" figure="UnitaryAnalysisFigure"/>
+  <nodes name="BiVariateAnalysis" figure="BiVariateAnalysisFigure"/>
+  <nodes name="UnivariateVisualization" figure="UnivariateVisualizationFigure"/>
+  <nodes name="BiVariateVisualization" figure="BiVariateVisualizationFigure"/>
+  <nodes name="NormalizationStandardization" figure="NormalizationStandardizationFigure"/>
+  <nodes name="State" figure="StateFigure"/>
+  <nodes name="Transition" figure="TransitionFigure"/>
+  <connections name="DataStates" figure="DataStatesFigure"/>
+  <connections name="DataTransitions" figure="DataTransitionsFigure"/>
+  <connections name="DataSource" figure="DataSourceFigure"/>
+  <connections name="DataTarget" figure="DataTargetFigure"/>
+  <connections name="InitialDataAnalysisStates" figure="InitialDataAnalysisStatesFigure"/>
+  <connections name="InitialDataAnalysisTransitions" figure="InitialDataAnalysisTransitionsFigure"/>
+  <connections name="InitialDataAnalysisSource" figure="InitialDataAnalysisSourceFigure"/>
+  <connections name="InitialDataAnalysisTarget" figure="InitialDataAnalysisTargetFigure"/>
+  <connections name="ExploratoryDataAnalysisInitialState" figure="ExploratoryDataAnalysisInitialStateFigure"/>
+  <connections name="ExploratoryDataAnalysisFinalState" figure="ExploratoryDataAnalysisFinalStateFigure"/>
+  <connections name="ExploratoryDataAnalysisStates" figure="ExploratoryDataAnalysisStatesFigure"/>
+  <connections name="ExploratoryDataAnalysisTransitions" figure="ExploratoryDataAnalysisTransitionsFigure"/>
+  <connections name="ExploratoryDataAnalysisSource" figure="ExploratoryDataAnalysisSourceFigure"/>
+  <connections name="ExploratoryDataAnalysisTarget" figure="ExploratoryDataAnalysisTargetFigure"/>
+  <connections name="NullValuesStates" figure="NullValuesStatesFigure"/>
+  <connections name="NullValuesTransitions" figure="NullValuesTransitionsFigure"/>
+  <connections name="NullValuesSource" figure="NullValuesSourceFigure"/>
+  <connections name="NullValuesTarget" figure="NullValuesTargetFigure"/>
+  <connections name="MissingValuesStates" figure="MissingValuesStatesFigure"/>
+  <connections name="MissingValuesTransitions" figure="MissingValuesTransitionsFigure"/>
+  <connections name="MissingValuesSource" figure="MissingValuesSourceFigure"/>
+  <connections name="MissingValuesTarget" figure="MissingValuesTargetFigure"/>
+  <connections name="RSquareStates" figure="RSquareStatesFigure"/>
+  <connections name="RSquareTransitions" figure="RSquareTransitionsFigure"/>
+  <connections name="RSquareSource" figure="RSquareSourceFigure"/>
+  <connections name="RSquareTarget" figure="RSquareTargetFigure"/>
+  <connections name="PValueFSignificanceStates" figure="PValueFSignificanceStatesFigure"/>
+  <connections name="PValueFSignificanceTransitions" figure="PValueFSignificanceTransitionsFigure"/>
+  <connections name="PValueFSignificanceSource" figure="PValueFSignificanceSourceFigure"/>
+  <connections name="PValueFSignificanceTarget" figure="PValueFSignificanceTargetFigure"/>
+  <connections name="UnitaryAnalysisStates" figure="UnitaryAnalysisStatesFigure"/>
+  <connections name="UnitaryAnalysisTransitions" figure="UnitaryAnalysisTransitionsFigure"/>
+  <connections name="UnitaryAnalysisSource" figure="UnitaryAnalysisSourceFigure"/>
+  <connections name="UnitaryAnalysisTarget" figure="UnitaryAnalysisTargetFigure"/>
+  <connections name="BiVariateAnalysisStates" figure="BiVariateAnalysisStatesFigure"/>
+  <connections name="BiVariateAnalysisTransitions" figure="BiVariateAnalysisTransitionsFigure"/>
+  <connections name="BiVariateAnalysisSource" figure="BiVariateAnalysisSourceFigure"/>
+  <connections name="BiVariateAnalysisTarget" figure="BiVariateAnalysisTargetFigure"/>
+  <connections name="UnivariateVisualizationStates" figure="UnivariateVisualizationStatesFigure"/>
+  <connections name="UnivariateVisualizationTransitions" figure="UnivariateVisualizationTransitionsFigure"/>
+  <connections name="UnivariateVisualizationSource" figure="UnivariateVisualizationSourceFigure"/>
+  <connections name="UnivariateVisualizationTarget" figure="UnivariateVisualizationTargetFigure"/>
+  <connections name="BiVariateVisualizationStates" figure="BiVariateVisualizationStatesFigure"/>
+  <connections name="BiVariateVisualizationTransitions" figure="BiVariateVisualizationTransitionsFigure"/>
+  <connections name="BiVariateVisualizationSource" figure="BiVariateVisualizationSourceFigure"/>
+  <connections name="BiVariateVisualizationTarget" figure="BiVariateVisualizationTargetFigure"/>
+  <connections name="NormalizationStandardizationStates" figure="NormalizationStandardizationStatesFigure"/>
+  <connections name="NormalizationStandardizationTransitions" figure="NormalizationStandardizationTransitionsFigure"/>
+  <connections name="NormalizationStandardizationSource" figure="NormalizationStandardizationSourceFigure"/>
+  <connections name="NormalizationStandardizationTarget" figure="NormalizationStandardizationTargetFigure"/>
+  <connections name="StateOutgoingTransitions" figure="StateOutgoingTransitionsFigure"/>
+  <connections name="StateIncomingTransitions" figure="StateIncomingTransitionsFigure"/>
+  <connections name="StateStates" figure="StateStatesFigure"/>
+  <connections name="StateTransitions" figure="StateTransitionsFigure"/>
+  <connections name="TransitionStates" figure="TransitionStatesFigure"/>
+  <connections name="TransitionTransitions" figure="TransitionTransitionsFigure"/>
+  <connections name="Action" figure="ActionFigure"/>
+  <connections name="Event" figure="EventFigure"/>
+  <labels name="DataLabel" figure="DataFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="InitialDataAnalysisLabel" figure="InitialDataAnalysisFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels name="ExploratoryDataAnalysisLabel" figure="ExploratoryDataAnalysisFigure" accessor="//@figures.0/@descriptors.10/@accessors.0"/>
+  <labels name="AttributeLabel" figure="AttributeFigure" accessor="//@figures.0/@descriptors.17/@accessors.0"/>
+  <labels name="AttributeName" figure="AttributeFigure" accessor="//@figures.0/@descriptors.17/@accessors.1"/>
+  <labels name="AttributeDataType" figure="AttributeFigure" accessor="//@figures.0/@descriptors.17/@accessors.2"/>
+  <labels name="DataValueLabel" figure="DataValueFigure" accessor="//@figures.0/@descriptors.18/@accessors.0"/>
+  <labels name="DataValueRow" figure="DataValueFigure" accessor="//@figures.0/@descriptors.18/@accessors.1"/>
+  <labels name="NullValuesLabel" figure="NullValuesFigure" accessor="//@figures.0/@descriptors.19/@accessors.0"/>
+  <labels name="NullValuesRemoveRow" figure="NullValuesFigure" accessor="//@figures.0/@descriptors.19/@accessors.1"/>
+  <labels name="NullValuesReplacementMethod" figure="NullValuesFigure" accessor="//@figures.0/@descriptors.19/@accessors.2"/>
+  <labels name="MissingValuesLabel" figure="MissingValuesFigure" accessor="//@figures.0/@descriptors.24/@accessors.0"/>
+  <labels name="MissingValuesRemoveRows" figure="MissingValuesFigure" accessor="//@figures.0/@descriptors.24/@accessors.1"/>
+  <labels name="MissingValuesReplacementMethod" figure="MissingValuesFigure" accessor="//@figures.0/@descriptors.24/@accessors.2"/>
+  <labels name="RSquareLabel" figure="RSquareFigure" accessor="//@figures.0/@descriptors.29/@accessors.0"/>
+  <labels name="RSquareValue" figure="RSquareFigure" accessor="//@figures.0/@descriptors.29/@accessors.1"/>
+  <labels name="RSquareAdjustedRSquare" figure="RSquareFigure" accessor="//@figures.0/@descriptors.29/@accessors.2"/>
+  <labels name="RSquareCutOffForRSquare" figure="RSquareFigure" accessor="//@figures.0/@descriptors.29/@accessors.3"/>
+  <labels name="RSquareIsDataFitForRegression" figure="RSquareFigure" accessor="//@figures.0/@descriptors.29/@accessors.4"/>
+  <labels name="PValueFSignificanceLabel" figure="PValueFSignificanceFigure" accessor="//@figures.0/@descriptors.34/@accessors.0"/>
+  <labels name="PValueFSignificanceAttributeList" figure="PValueFSignificanceFigure" accessor="//@figures.0/@descriptors.34/@accessors.1"/>
+  <labels name="PValueFSignificanceAttributePValues" figure="PValueFSignificanceFigure" accessor="//@figures.0/@descriptors.34/@accessors.2"/>
+  <labels name="UnitaryAnalysisLabel" figure="UnitaryAnalysisFigure" accessor="//@figures.0/@descriptors.39/@accessors.0"/>
+  <labels name="UnitaryAnalysisAllowedMethods" figure="UnitaryAnalysisFigure" accessor="//@figures.0/@descriptors.39/@accessors.1"/>
+  <labels name="UnitaryAnalysisSelectedMethods" figure="UnitaryAnalysisFigure" accessor="//@figures.0/@descriptors.39/@accessors.2"/>
+  <labels name="BiVariateAnalysisLabel" figure="BiVariateAnalysisFigure" accessor="//@figures.0/@descriptors.44/@accessors.0"/>
+  <labels name="BiVariateAnalysisAllowedMethods" figure="BiVariateAnalysisFigure" accessor="//@figures.0/@descriptors.44/@accessors.1"/>
+  <labels name="BiVariateAnalysisSelectedMethods" figure="BiVariateAnalysisFigure" accessor="//@figures.0/@descriptors.44/@accessors.2"/>
+  <labels name="UnivariateVisualizationLabel" figure="UnivariateVisualizationFigure" accessor="//@figures.0/@descriptors.49/@accessors.0"/>
+  <labels name="UnivariateVisualizationMethod" figure="UnivariateVisualizationFigure" accessor="//@figures.0/@descriptors.49/@accessors.1"/>
+  <labels name="UnivariateVisualizationShowLegend" figure="UnivariateVisualizationFigure" accessor="//@figures.0/@descriptors.49/@accessors.2"/>
+  <labels name="UnivariateVisualizationShowTitle" figure="UnivariateVisualizationFigure" accessor="//@figures.0/@descriptors.49/@accessors.3"/>
+  <labels name="BiVariateVisualizationLabel" figure="BiVariateVisualizationFigure" accessor="//@figures.0/@descriptors.54/@accessors.0"/>
+  <labels name="BiVariateVisualizationMethod" figure="BiVariateVisualizationFigure" accessor="//@figures.0/@descriptors.54/@accessors.1"/>
+  <labels name="BiVariateVisualizationShowLegend" figure="BiVariateVisualizationFigure" accessor="//@figures.0/@descriptors.54/@accessors.2"/>
+  <labels name="BiVariateVisualizationShowTitle" figure="BiVariateVisualizationFigure" accessor="//@figures.0/@descriptors.54/@accessors.3"/>
+  <labels name="NormalizationStandardizationLabel" figure="NormalizationStandardizationFigure" accessor="//@figures.0/@descriptors.59/@accessors.0"/>
+  <labels name="NormalizationStandardizationNormalizeFrom0To1" figure="NormalizationStandardizationFigure" accessor="//@figures.0/@descriptors.59/@accessors.1"/>
+  <labels name="NormalizationStandardizationStandardizeFromMinus1To1" figure="NormalizationStandardizationFigure" accessor="//@figures.0/@descriptors.59/@accessors.2"/>
+  <labels name="StateLabel" figure="StateFigure" accessor="//@figures.0/@descriptors.64/@accessors.0"/>
+  <labels name="StateName" figure="StateFigure" accessor="//@figures.0/@descriptors.64/@accessors.1"/>
+  <labels name="StateIsInitial" figure="StateFigure" accessor="//@figures.0/@descriptors.64/@accessors.2"/>
+  <labels name="StateIsFinal" figure="StateFigure" accessor="//@figures.0/@descriptors.64/@accessors.3"/>
+  <labels name="TransitionLabel" figure="TransitionFigure" accessor="//@figures.0/@descriptors.69/@accessors.0"/>
+  <labels name="TransitionName" figure="TransitionFigure" accessor="//@figures.0/@descriptors.69/@accessors.1"/>
+  <labels name="TransitionInput" figure="TransitionFigure" accessor="//@figures.0/@descriptors.69/@accessors.2"/>
+  <labels name="TransitionOutput" figure="TransitionFigure" accessor="//@figures.0/@descriptors.69/@accessors.3"/>
+  <labels name="TransitionEvent" figure="TransitionFigure" accessor="//@figures.0/@descriptors.69/@accessors.4"/>
+  <labels name="ActionLabel" figure="ActionFigure" accessor="//@figures.0/@descriptors.72/@accessors.0"/>
+  <labels name="ActionName" figure="ActionFigure" accessor="//@figures.0/@descriptors.72/@accessors.1"/>
+  <labels name="EventLabel" figure="EventFigure" accessor="//@figures.0/@descriptors.73/@accessors.0"/>
+  <labels name="EventName" figure="EventFigure" accessor="//@figures.0/@descriptors.73/@accessors.1"/>
+</gmfgraph:Canvas>
