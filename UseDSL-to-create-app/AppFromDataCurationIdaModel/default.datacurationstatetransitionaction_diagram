@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DataCurationStateTransitionAction="http://DataCurationStateTransitionAction.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_ylBEsNWtEe2mXpiQCJYRJg" type="DataCurationStateTransitionAction" name="default.datacurationstatetransitionaction_diagram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_ylBEsdWtEe2mXpiQCJYRJg"/>
+  <element xmi:type="DataCurationStateTransitionAction:DataCurationStateTransitionAction" href="default.datacurationstatetransitionaction#/"/>
+</notation:Diagram>
