@@ -1,0 +1,7 @@
+# Tracing options for the GMFDataScienceDataCurationProjec.diagram plug-in
+
+# Common issues
+GMFDataScienceDataCurationProjec.diagram/debug=false
+
+# Visual IDs
+GMFDataScienceDataCurationProjec.diagram/debug/visualID=false
