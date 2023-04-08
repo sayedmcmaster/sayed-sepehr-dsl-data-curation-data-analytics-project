@@ -1,0 +1,7 @@
+# Tracing options for the DataScienceDataCurationProject.diagram plug-in
+
+# Common issues
+DataScienceDataCurationProject.diagram/debug=false
+
+# Visual IDs
+DataScienceDataCurationProject.diagram/debug/visualID=false
