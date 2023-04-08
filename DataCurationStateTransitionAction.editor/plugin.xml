@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated DataCurationStateTransitionAction -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="dataCurationStateTransitionAction.presentation.DataCurationStateTransitionActionModelWizardID"
+            name="%_UI_DataCurationStateTransitionActionModelWizard_label"
+            class="dataCurationStateTransitionAction.presentation.DataCurationStateTransitionActionModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DataCurationStateTransitionActionModelFile.gif">
+         <description>%_UI_DataCurationStateTransitionActionModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated DataCurationStateTransitionAction -->
+      <editor
+            id="dataCurationStateTransitionAction.presentation.DataCurationStateTransitionActionEditorID"
+            name="%_UI_DataCurationStateTransitionActionEditor_label"
+            icon="icons/full/obj16/DataCurationStateTransitionActionModelFile.gif"
+            extensions="datacurationstatetransitionaction"
+            class="dataCurationStateTransitionAction.presentation.DataCurationStateTransitionActionEditor"
+            contributorClass="dataCurationStateTransitionAction.presentation.DataCurationStateTransitionActionActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

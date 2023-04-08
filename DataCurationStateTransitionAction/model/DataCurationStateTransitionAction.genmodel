@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/DataCurationStateTransitionAction/src" modelPluginID="DataCurationStateTransitionAction"
+    modelName="DataCurationStateTransitionAction" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>DataCurationStateTransitionAction.ecore</foreignModel>
+  <genPackages prefix="DataCurationStateTransitionAction" disposableProviderFactory="true"
+      ecorePackage="DataCurationStateTransitionAction.ecore#/">
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//DataCurationStateTransitionAction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//DataCurationStateTransitionAction/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//DataCurationStateTransitionAction/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//DataCurationStateTransitionAction/data"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//DataCurationStateTransitionAction/ida"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//DataCurationStateTransitionAction/eda"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//DataCurationStateTransitionAction/states"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//DataCurationStateTransitionAction/transitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//DataCurationStateTransitionAction/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//DataCurationStateTransitionAction/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//Data">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Data/Label"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Data/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Data/dataValues"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Data/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Data/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Data/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Data/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Data/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Data/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//InitialDataAnalysis">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//InitialDataAnalysis/Label"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//InitialDataAnalysis/nullValues"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//InitialDataAnalysis/missingValues"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//InitialDataAnalysis/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//InitialDataAnalysis/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//InitialDataAnalysis/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//InitialDataAnalysis/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//InitialDataAnalysis/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//InitialDataAnalysis/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/Label"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/rSquare"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/pValueFSignificance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/unitaryAnalysis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/biVariateAnalysis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/univariateVisualization"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/biVariateVisualization"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/normalizationStandardization"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/initialState"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/finalState"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//ExploratoryDataAnalysis/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Attribute/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Attribute/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Attribute/DataType"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//DataValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//DataValue/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//DataValue/row"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//NullValues">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//NullValues/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//NullValues/removeRow"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//NullValues/replacementMethod"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NullValues/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NullValues/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NullValues/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NullValues/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NullValues/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NullValues/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//MissingValues">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//MissingValues/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//MissingValues/removeRows"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//MissingValues/replacementMethod"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//MissingValues/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//MissingValues/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//MissingValues/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//MissingValues/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//MissingValues/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//MissingValues/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//RSquare">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//RSquare/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//RSquare/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//RSquare/adjustedRSquare"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//RSquare/cutOffForRSquare"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//RSquare/isDataFitForRegression"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//RSquare/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//RSquare/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//RSquare/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//RSquare/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//RSquare/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//RSquare/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//PValueFSignificance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//PValueFSignificance/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//PValueFSignificance/attributeList"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//PValueFSignificance/attributePValues"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//PValueFSignificance/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//PValueFSignificance/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//PValueFSignificance/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//PValueFSignificance/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//PValueFSignificance/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//PValueFSignificance/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//UnitaryAnalysis">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//UnitaryAnalysis/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//UnitaryAnalysis/allowedMethods"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//UnitaryAnalysis/selectedMethods"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnitaryAnalysis/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnitaryAnalysis/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnitaryAnalysis/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnitaryAnalysis/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnitaryAnalysis/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnitaryAnalysis/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//BiVariateAnalysis">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//BiVariateAnalysis/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//BiVariateAnalysis/allowedMethods"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//BiVariateAnalysis/selectedMethods"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateAnalysis/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateAnalysis/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateAnalysis/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateAnalysis/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateAnalysis/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateAnalysis/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//UnivariateVisualization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//UnivariateVisualization/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//UnivariateVisualization/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//UnivariateVisualization/showLegend"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//UnivariateVisualization/showTitle"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnivariateVisualization/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnivariateVisualization/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnivariateVisualization/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnivariateVisualization/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnivariateVisualization/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//UnivariateVisualization/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//BiVariateVisualization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//BiVariateVisualization/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//BiVariateVisualization/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//BiVariateVisualization/showLegend"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//BiVariateVisualization/showTitle"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateVisualization/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateVisualization/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateVisualization/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateVisualization/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateVisualization/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//BiVariateVisualization/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//NormalizationStandardization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//NormalizationStandardization/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//NormalizationStandardization/normalizeFrom0To1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//NormalizationStandardization/standardizeFromMinus1To1"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NormalizationStandardization/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NormalizationStandardization/transitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NormalizationStandardization/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NormalizationStandardization/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NormalizationStandardization/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//NormalizationStandardization/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//State">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//State/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//State/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//State/isInitial"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//State/isFinal"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//State/outgoingTransitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//State/incomingTransitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//State/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//State/transitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//State/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//State/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//Transition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Transition/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Transition/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Transition/input"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Transition/output"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Transition/event"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Transition/states"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Transition/transitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Transition/actionToTake"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Transition/eventToTake"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//Action">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Action/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Action/Name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Action/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Action/target"/>
+    </genClasses>
+    <genClasses ecoreClass="DataCurationStateTransitionAction.ecore#//Event">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Event/Label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DataCurationStateTransitionAction.ecore#//Event/Name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Event/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DataCurationStateTransitionAction.ecore#//Event/target"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
